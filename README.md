@@ -130,4 +130,11 @@ The model is not intended or made available for clinical use as a medical device
   year={2025},
   publisher={Elsevier}
 }
+
+@article{usuyama2026gigapath,
+  title={GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis},
+  author={Usuyama, Naoto and Valanarasu, Jeya Maria Jose and Yao, Sicong and Xu, Hanwen and Bagga, Jaspreet and Qin, Guanghui and Kramer, Robert E and Wong, Cliff and Lee, Soohee and Qiu, Hao and others},
+  journal={arXiv preprint arXiv:2607.18218},
+  year={2026}
+}
 ```
