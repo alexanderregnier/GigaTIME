@@ -25,6 +25,15 @@ GigaTIME-Flash is built on top of [GigaPath-Flash](https://github.com/prov-gigap
 
 ➡️ **Whole-slide inference:** tile a full TCGA slide, run GigaTIME-Flash, and stitch a slide-level virtual mIF map across all channels — [scripts/gigatime_flash_tcga_wsi_inference.ipynb](scripts/gigatime_flash_tcga_wsi_inference.ipynb)
 
+## Model Family
+
+| Model              | Description                               | Weights                                                          |  Code                                                  | Paper                                                       | License    |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **GigaPath**       | Whole-slide foundation model              | [link](https://huggingface.co/prov-gigapath/prov-gigapath)  | [link](https://github.com/prov-gigapath/prov-gigapath) | [Nature (2024)](https://doi.org/10.1038/s41586-024-07441-w) | Apache-2.0 |
+| **GigaPath-Flash** | Efficient whole-slide foundation model    | [link](https://huggingface.co/prov-gigapath/prov-gigapath-flash)    | [link](https://github.com/prov-gigapath/prov-gigapath) | [arXiv (2026)](https://arxiv.org/abs/2607.18218)            | Apache-2.0 |
+| **GigaTIME**       | Spatial proteomics prediction from H&E           | [link](https://huggingface.co/prov-gigatime/GigaTIME)       | [link](https://github.com/prov-gigatime/GigaTIME)      | [Cell (2026)](https://doi.org/10.1016/j.cell.2025.11.016)   | Apache-2.0 |
+| **GigaTIME-Flash** | Efficient spatial proteomics prediction from H&E | [link](https://huggingface.co/prov-gigatime/gigatime-flash) | [link](https://github.com/prov-gigatime/GigaTIME)      | [arXiv (2026)](https://arxiv.org/abs/2607.18218)            | Apache-2.0 |
+
 ## Environment Setup
 
 We recommend using Conda for environment management. The codebase has been tested with Python 3.11 using A100 GPUs for optimal reproducibility. Before creating the environment, ensure that the `torch` version specified in `environment.yml` matches your GPU and CUDA driver setup.
@@ -131,10 +140,12 @@ The model is not intended or made available for clinical use as a medical device
   publisher={Elsevier}
 }
 
-@article{usuyama2026gigapath,
-  title={GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis},
-  author={Usuyama, Naoto and Valanarasu, Jeya Maria Jose and Yao, Sicong and Xu, Hanwen and Bagga, Jaspreet and Qin, Guanghui and Kramer, Robert E and Wong, Cliff and Lee, Soohee and Qiu, Hao and others},
+@article{usuyama2026gigapathflash,
+  title={{GigaPath-Flash} and {GigaTIME-Flash}: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis},
+  author={Usuyama, Naoto and Valanarasu, Jeya Maria Jose and Yao, Sicong and Xu, Hanwen and Bagga, Jaspreet and Qin, Guanghui and Kramer, Robert E. and Wong, Cliff and Lee, Soohee and Qiu, Hao and Zhao, Theodore Zhengde and Ben Shimol, Racheli and Crabtree, Angela and Matlock, Kevin and Lozano Garcia, Eduardo Alejandro and Sangani, Naiteek and Santamaria-Pang, Alberto and Rokuss, Maximilian and Hasija, Yashna and Patel, Naisargi Manishkumar and Entenmann, Jason and Bartlett, Alexandra Q. and Wright, Bill J. and Fox, Bernard A. and Piening, Brian and Zhang, Sheng and Wang, Sheng and Naumann, Tristan and Bifulco, Carlo and Poon, Hoifung},
   journal={arXiv preprint arXiv:2607.18218},
-  year={2026}
+  year={2026},
+  doi={10.48550/arXiv.2607.18218},
+  url={https://arxiv.org/abs/2607.18218}
 }
 ```
