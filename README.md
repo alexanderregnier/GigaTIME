@@ -27,8 +27,6 @@ GigaTIME-Flash is built on top of [GigaPath-Flash](https://github.com/prov-gigap
 
 ## Model Family
 
-## Model Family
-
 | Model                                                                          | Description                                      |                            Paper                            |   License  |
 | :----------------------------------------------------------------------------- | :----------------------------------------------- | :---------------------------------------------------------: | :--------: |
 | [**GigaPath**](https://huggingface.co/prov-gigapath/prov-gigapath)             | Whole-slide foundation model                     | [Nature (2024)](https://doi.org/10.1038/s41586-024-07441-w) | Apache-2.0 |
